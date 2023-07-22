@@ -22,9 +22,10 @@ int main()
     Derived d;
     Base *p=&d;
     p->fun1();
-    //p->fun2();   //fun2 is in derived class but pointer points to Base class //so won't execute
+    //p->fun2();   //fun2 is in derived class but pointer is of Base class //so won't execute
     //d.fun1();
     //d.fun2();
+
 
     return 0;
 }

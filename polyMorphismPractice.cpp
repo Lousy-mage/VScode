@@ -57,12 +57,21 @@ class Circle: public Shape
 
 
 int main(){
-    Rectangle r;
-    r.area();
-    r.peremeter();
-    Circle c;
-    c.area();
-    c.peremeter();
+    Shape *s=new Rectangle(5,3);
+    s->area();
+    s->peremeter();
+
+    s=new Circle(3.45); // no need for redeclaration like ----Shape *s=new Circle(3.45)-----
+    s->area();
+    s->peremeter();
+
+
+    // Rectangle r;
+    // r.area();
+    // r.peremeter();
+    // Circle c;
+    // c.area();
+    // c.peremeter();
 
     return 0;
 }

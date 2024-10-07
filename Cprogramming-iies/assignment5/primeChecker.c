@@ -17,6 +17,7 @@ int main(){
         printf("not prime\n");
         return 0;
     }
+    else{
     int i = 5;
     while (i * i <= num) {
         if (num % i == 0 || num % (i + 2) == 0) {
@@ -26,5 +27,6 @@ int main(){
         i += 6;
     }
     printf("prime\n");
+    }
     return 0;
 }

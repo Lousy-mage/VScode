@@ -9,12 +9,12 @@ int main(){
         for(j=i; j<=n; j++){
             
             if (j==i)
-                printf("%d",i);
+                printf("%4d",i);
             else{
                 num=num+t;
-                printf("%d",num);
+                printf("%4d",num);
             }
-            printf("   ");
+            // printf("   ");
             t--;
         }
         printf("\n");

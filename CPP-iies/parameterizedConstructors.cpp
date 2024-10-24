@@ -24,11 +24,13 @@ class demo{
     void show(){
         cout<<a<<" "<<b<<endl;
     }
+    ~demo(){}
 };
 int main(){
     demo f;
     demo d(15,10);
     demo s(d);
+    f.show();
     d.show();
     s.show();
     return 0;

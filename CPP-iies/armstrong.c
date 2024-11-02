@@ -1,9 +1,15 @@
 #include <stdio.h>
+#include <math.h>
 void check(int n){
-    int rev=0,temp=n;
+    int rev=0,temp=n,dig=0;
+    while(temp){
+        temp/=10;
+        dig++;
+    }
+    temp=n;
     while(n){
         int i=n%10;
-        rev=rev+(i*i*i);
+        rev=rev+pow(i,dig);
         n/=10;
     }
     if(temp==rev){

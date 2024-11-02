@@ -56,7 +56,7 @@ int main(){
     s[i][j]=n
     
          */
-        printf("product of a and b is : \n");
+    printf("product of a and b is : \n");
     for(int i=0;i<row;++i){
         for(int j=0;j<col;++j){
             c[i][j]=0;
@@ -65,6 +65,7 @@ int main(){
             }
         }
     }
+
     for(int i=0;i<row;++i){
         for(int j=0;j<col;++j){
             printf("%d ",c[i][j]);

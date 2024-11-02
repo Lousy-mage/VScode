@@ -26,7 +26,5 @@ int main(){
     fgets(str2,sizeof(str2),stdin);
 
     comp(str1,str2);
-    
-
     return 0;
 }

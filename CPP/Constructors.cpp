@@ -1,4 +1,4 @@
-#include "iostream"
+#include <iostream>
 using namespace std;
 
 class Rectangle
@@ -16,14 +16,7 @@ class Rectangle
             return 2*(length+breadth);
         }
 
-        // constructors:
-
-            // Rectangle()
-            // {
-            //     length=1;
-            //     breadth=1;
-            // }
-        Rectangle(int l=1, int b=1) //default arguments help reduce code size
+        Rectangle(int l=1, int b=1)
         {
             setLength(l);
             setBreadth(b);
@@ -34,9 +27,6 @@ class Rectangle
             breadth=r.breadth;
         }
 
-
-
-        // functions
         void setLength(int l)
         {
           if(l>0)
@@ -56,8 +46,7 @@ class Rectangle
 
 int main()
 {
-    //Rectangle r;    //Non-Argument
-    Rectangle r(10,5); //Argument
+    Rectangle r(10,5);
     Rectangle r2(r);
 
     cout<<r2.area()<<endl;

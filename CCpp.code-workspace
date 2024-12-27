@@ -1,0 +1,20 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../CLIst"
+		},
+		{
+			"path": "../Ledgerous"
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"stdio.h": "c",
+			"iostream": "cpp",
+			"ostream": "cpp"
+		}
+	}
+}

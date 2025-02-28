@@ -1,12 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-typedef struct Node { 
+typedef struct Node {
     int data;
-    struct Node* next; 
+    struct Node* next;
 } node;
 
-node* front = NULL; 
+node* front = NULL;
 node* rear = NULL;
 
 node* memalloc(int d){ 
